@@ -1,3 +1,9 @@
 * {
   font-family: sans-serif;
 }
+
+#text-render {
+  width: 70%;
+  padding-bottom: 2%;
+  margin-left: 1%;
+}

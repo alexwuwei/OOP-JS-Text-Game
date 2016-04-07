@@ -17,7 +17,7 @@ Coder.prototype.takeSarcasm = function (damage) {
 //UberCoder constructor and methods
 
 function UberCoder (name, skill, uberskill) {
-  Human.call(this, name, skill);
+  Coder.call(this, name, skill);
   this.uberskill = uberskill;
 }
 

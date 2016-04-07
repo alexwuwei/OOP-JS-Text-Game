@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/main.css" charset="utf-8">
     <title>OOP Text Game - ES5 Version</title>
   </head>
   <body>
     <h1>Bestest Text Game</h1>
-    <section id="game-container">
+    <section id="game-container" ng-controller="RenderController as render">
       <div id="text-render">
-
+        {{render.welcomeText}}
       </div>
-      <input ng-model="">
-      <button bg-click="">Submit</button>
+      <input ng-model="render.inputText">
+      <button ng-click="render.clearText()">Submit</button>
     </section>
+    <script type="text/javascript" src="/bundle.js"></script>
   </body>
 </html>
