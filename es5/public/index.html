@@ -8,12 +8,12 @@
   <body>
     <h1>Bestest Text Game</h1>
     <section id="game-container" ng-controller="RenderController as render">
-      <div id="text-render" ng-model="render.welcomeText">
-        {{render.welcomeText}}
-      </div>
-      <form ng-submit="render.handleSubmit()">
-        <input type="text" ng-model="render.inputText" name="text">
-        <button type="submit">Submit</button>
+      <form ng-submit="render.handleSubmit(text)">
+        <input type="text" ng-model="render.inputText" name="text"/>
+        <input type="submit" id="submit" value="Submit"/>
+        <div id="text-render">
+          {{render.welcomeText}}
+        </div>
       </form>
     </section>
     <script type="text/javascript" src="/bundle.js"></script>
