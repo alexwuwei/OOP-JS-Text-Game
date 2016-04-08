@@ -17,7 +17,7 @@ Coder.prototype.takeSarcasm = function (damage) {
 //UberCoder constructor and methods
 
 function UberCoder (name, skill, uberskill) {
-  Human.call(this, name, skill);
+  Coder.call(this, name, skill);
   this.uberskill = uberskill;
 }
 
@@ -29,9 +29,9 @@ UberCoder.prototype.useUberSkill = function(target) {
 
 //player instances
 var reginald = new Coder('reginald coder', 12);
-var mattU = new UberCoder('matt uber coder', 32, 50);
+var matt = new UberCoder('matt uber coder', 32, 50);
 var kelly = new Coder ('kelly coder', 10);
-var maryU = new UberCoder('tom uber coder', 30, 51);
+var mary = new UberCoder('tom uber coder', 30, 51);
 
 //win lose function
 function winLose (hitter, target) {

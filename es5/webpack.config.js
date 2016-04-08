@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './public/js/app.js',
+  entry: './public/js/ang-app.js',
   output: {
     path: __dirname,
     filename: 'public/bundle.js'
